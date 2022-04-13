@@ -11,6 +11,10 @@
         "dist/base-components/base-components",
         "dist/base-components"
       ],
+      "dashboard": [
+        "dist/dashboard/dashboard",
+        "dist/dashboard"
+      ],
       "log-in": [
         "dist/log-in/log-in",
         "dist/log-in"

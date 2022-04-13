@@ -1,0 +1,208 @@
+@import "theme-variables";
+
+//@for $i from 1 through length($sizes) {
+//  $size: nth($sizes, $i);
+//  h#{$i} {
+//    font-size: $size;
+//    margin: 15px 0;
+//  }
+//}
+
+p, input[type="text"],
+input[type="password"],
+input[type="button"],
+input[type="submit"]{
+  font-size: 1rem;
+  color: $secondary-color;
+
+  &::placeholder {
+    color: red;
+    opacity: 0.5;
+  }
+}
+
+img,
+picture,
+video,
+canvas,
+svg,
+iframe {
+  display: block;
+  max-width: 100%;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+
+}
+
+strong {
+  font-weight: bolder;
+}
+
+:where(button, [type='button' i], [type='reset' i], [type='submit' i]) {
+  -webkit-appearance: button;
+}
+
+small {
+  font-size: 80%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  caption-side: bottom;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+hr{
+  border: 0 none;
+}
+
+textarea {
+  white-space: revert;
+  font-size: 1rem;
+}
+
+.primary-link{
+
+}
+
+.container {
+  width: 100%;
+  position: relative;
+
+  & .main-container{
+    width: calc(100% - 580px);
+    margin-left: 290px;
+    position:relative;
+  }
+}
+
+/*
+* Forms
+*/
+
+.primary-form{
+  width: 400px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: $lightBg;
+  border-radius: 5px;
+  border: 2px solid $lightBorder;
+  height: 50px;
+  padding: 0 10px 0 30px;
+}
+
+.primary-form-item{
+  width: 100%;
+}
+
+.primary-label{
+  width: 25px;
+  height: 100%;
+  border:1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+
+  & i{
+    width: 10px;
+    height: 10px;
+    border: 1px solid red;
+
+  }
+}
+
+.primary-input{
+  width: calc(100% - 50px);
+  height: 100%;
+  border: none;
+  background: none;
+  margin-left: 15px;
+
+  &::placeholder {
+    color: $darkHalf;
+    opacity: 1;
+  }
+}
+
+.primary-button{
+  width: 100%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  min-height: 50px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: $green;
+  color: $white;
+  transition: 200ms ease-out all;
+
+  &:hover{
+    background-color: $greenLighter;
+  }
+
+}
