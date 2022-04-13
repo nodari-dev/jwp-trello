@@ -2,6 +2,28 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "auth": [
+        "dist/auth/auth",
+        "dist/auth"
+      ],
+      "base-components": [
+        "dist/base-components/base-components",
+        "dist/base-components"
+      ],
+      "log-in": [
+        "dist/log-in/log-in",
+        "dist/log-in"
+      ],
+      "log-n": [
+        "dist/log-n/log-n",
+        "dist/log-n"
+      ],
+      "sign-up": [
+        "dist/sign-up/sign-up",
+        "dist/sign-up"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
