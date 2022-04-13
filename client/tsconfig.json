@@ -15,10 +15,6 @@
         "dist/log-in/log-in",
         "dist/log-in"
       ],
-      "log-n": [
-        "dist/log-n/log-n",
-        "dist/log-n"
-      ],
       "sign-up": [
         "dist/sign-up/sign-up",
         "dist/sign-up"
